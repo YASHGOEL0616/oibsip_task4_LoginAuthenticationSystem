@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ... (head content remains the same) ... -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.css" />
+    <title>registration</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="top-header">
+          <span>Create an account</span>
+          <header>Register</header>
+        </div>
+        <form id="registrationForm" onsubmit="return registerUser()">
+          <label class="user" for="newUsername">Username:</label>
+          <input type="text" id="newUsername" required />
+          <label class="pass" for="newPassword">Password:</label>
+          <input type="password" id="newPassword" required />
+          <button class="login" type="submit">Register</button>
+          <div id="registrationMessage" class="error"></div>
+        </form>
+      </div>
+    </div>
+    <script src="registration.js"></script>
+  </body>
+</html>
